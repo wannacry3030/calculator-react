@@ -14,7 +14,7 @@ const btnValues = [
 const App = () => {
   return (
     <Wrapper>
-      <Screen value="0" />
+      <Screen value={0} />
       <ButtonBox>
         {btnValues.flat().map((btn, i) => {
           return (
@@ -23,7 +23,7 @@ const App = () => {
               className={btn === "=" ? "equals" : ""}
               value={btn}
               onClick={() => {
-                console.log("Button clicked!");
+                console.log(`${btn} clicked!`);
               }}
             />
           );
